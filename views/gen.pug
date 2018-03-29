@@ -1,0 +1,30 @@
+include mixins/_form
+include style.css
+
+html
+	head
+		title= title
+	body.centered-wrapper
+		h1 Create List
+		.login
+			 
+			a.button(href= `/register`) login/register
+		br
+		br
+		ul.centered-content
+			p so this shitty version, it just says hey, give me ALL of the banks, and then outputs a random item in any one bank
+			br
+			br
+
+			p so the next step here is to modify what displays in RESULTS... but how? well remember that result in results is just javascript
+			p *** Display ***
+			each result in results || {}
+				//- p.quotes #{result.quote}
+				//- p - #{result.name}&nbsp;&nbsp;&nbsp;
+				//- 	span.r Size: #{result.item.length}
+				- var i = 0
+				//- each item in result.item
+					//- p #{result.item[i]}
+				- i = i + 1 
+				- var rando = Math.floor((Math.random() * result.item.length))
+				span #{result.item[rando]}&nbsp;
