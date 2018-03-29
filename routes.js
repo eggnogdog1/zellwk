@@ -9,7 +9,7 @@ const twitterController = require('./twitterController');
 router.get('/twitter', twitterController.home);
 
 router.get('/', quoteController.getQuotes);
-
+router.get('/gen', quoteController.getGen);
 router.get('/login', userController.getForm);
 
 router.get('/edit/:id', quoteController.editQuote);

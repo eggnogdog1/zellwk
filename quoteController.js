@@ -2,6 +2,12 @@
 const mongoose = require('mongoose');
 const Quote = mongoose.model('Quote');
 
+
+
+exports.getGen = async(req,res) => {
+	res.json({});
+}
+
 exports.getQuotes = async (req, res) => {
 
 
