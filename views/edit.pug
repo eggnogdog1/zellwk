@@ -1,0 +1,13 @@
+include mixins/_form2
+include style.css
+
+html
+	head
+		title= title
+	body.centered-wrapper
+		h1= message
+		.login
+			 
+			a.button(href= `/register`) login/register
+		+form2(results || {})
+		ul.centered-content

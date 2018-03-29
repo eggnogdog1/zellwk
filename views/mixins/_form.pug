@@ -1,0 +1,6 @@
+mixin form(results = [])
+	form(action="/" method="POST") 
+		input.i(type="text" placeholder="name" name="name" value="danny" required="true")
+		input.i(type="text" placeholder="quote" name="quote" value="." required="true")
+		br
+		button.b(type="submit") Submit

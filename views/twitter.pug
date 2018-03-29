@@ -1,0 +1,7 @@
+.tweets
+	each tweet in data.statuses || {}
+		p #{tweet.text} 
+		p Favs: #{tweet.favorite_count}   &nbsp;&nbsp;
+			span RTs: #{tweet.retweet_count} &nbsp; &nbsp;
+			a(href=`https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`) link
+			

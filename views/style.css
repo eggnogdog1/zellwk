@@ -1,0 +1,114 @@
+<style>
+
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-size:38px;
+    font-family:Helvetica;
+}
+
+.quotes{
+	font-size:36px;
+    font-family:Helvetica-Light;
+}
+.r{
+    text-align:right;
+
+}
+.b{    
+
+background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+
+}
+
+p {
+    font-size:16px;
+    font-family:Helvetica;
+}
+
+a {
+    font-size:12px;
+    font-family:Helvetica;
+    text-decoration: none;
+}
+
+.i{
+    font-size:14px;
+    text-align:left;
+    margin: 10px;
+    width: 100%;
+    height:4%;
+    vertical-align: center;
+       float:right;
+
+
+}
+
+.new{
+    margin:10px auto;
+    height:4%;
+    padding: 10 5 5 5px;
+}
+
+.h{
+    display:none;
+
+}
+
+button{
+    text-align:center;
+    vertical-align: center;
+    margin: 0px right;
+    float:right;
+}
+
+.im{
+    text-align:right;
+/*    display:inline;
+    margin-left:auto; 
+    margin-right:0;
+    display:inline-block;
+    position:relative;*/
+}
+/*body{
+	width: 640px;
+	align-self: center;
+	vertical-align: middle;
+	text-align: left;
+	display:table-cell;
+}
+*/
+.login{
+	text-align: right;
+}
+   body{
+            max-width: 640px;
+            
+            margin: 0px auto;
+            text-align: left;
+        }
+
+        .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+</style>

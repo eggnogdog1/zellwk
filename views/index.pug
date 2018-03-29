@@ -1,0 +1,26 @@
+include mixins/_form
+include style.css
+
+html
+	head
+		title= title
+	body.centered-wrapper
+		h1 Create List
+		.login
+			 
+			a.button(href= `/register`) login/register
+		br
+		br
+		+form(results || {})
+		br
+		br
+		ul.centered-content
+			each result in results || {}
+				p ____________________________________________________________________________
+				div.im
+					a.im(href=`/edit/${result._id}`) edit
+					|    
+					a.im(href=`/delete/${result._id}`) del
+				p.quotes #{result.quote}
+				p - #{result.name}&nbsp;&nbsp;&nbsp;
+					span.r Size: #{result.item.length}

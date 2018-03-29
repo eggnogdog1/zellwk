@@ -1,0 +1,16 @@
+mixin form2(results = [])
+	form(action=`/edit/` method="POST") 
+		input.i(type="text" placeholder="name" name="name" value=`${results[0].name}`)
+		input.i(type="text" placeholder="quote" name="quote" value=`${results[0].quote}`)
+		br
+		- var items = results[0].item || []
+		- console.log(items)
+		each item in items
+			p #{index} 
+			input.items(type="text" placeholder="quote" name="item" value=`${item}`)
+		input.h(type="text" placeholder="" name="_id" value=`${results[0].id}`)
+		button(type="submit") Submit
+		br
+		.plus (+)
+		.new
+		include adder.js
