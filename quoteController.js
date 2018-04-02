@@ -5,7 +5,12 @@ const Quote = mongoose.model('Quote');
 
 
 exports.getGen = async(req,res) => {
-	res.json({});
+	const zap = "zap";
+	var results = await Quote.find({}, function (err, quotes) {
+	if (err) throw err;
+});
+	res.render('gen', {results});
+	// res.json({});
 }
 
 exports.getQuotes = async (req, res) => {
